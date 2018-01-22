@@ -1,0 +1,159 @@
+html {
+	font-size: 10px;
+}
+
+:root {
+	--bgcolor: #000000;
+	/* zmienna w css*/
+}
+
+/*header*/
+
+body {
+	transition: all .9s;
+}
+
+.heading-header {
+	text-align: center;
+}
+
+.main-banner {
+	background-image: url(img/rawpixel-com-445793.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0;
+	height: 300px;
+	width: 100%;
+}
+
+main {
+	min-height: 1500px;
+}
+
+.night {
+	background-color: var(--bgcolor);
+	opacity: 0.3;
+	width: 100%;
+	height: 100%;
+
+}
+
+.light {
+	text-shadow: rgba(255, 255, 255, 0.8)0 0 40px;
+	color: #f1d83d;
+	background-color: var(--bgcolor);
+	font-size: 4rem;
+	padding: 10px;
+	text-align: center;
+}
+
+.neon {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 2rem;
+}
+
+/*footer*/
+
+footer {
+	background-color: #334252;
+	color: #aaaaaa;
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+}
+
+footer:hover .oi {
+	color: #d8f07c;
+	transition: all 0.5s steps(5);
+	text-shadow: rgba(255, 255, 255, 0.8)0 0 40px;
+}
+
+.oi {
+	margin-left: 5px;
+}
+
+.heading-header {
+	text-align: center;
+}
+
+.project {
+	border: 1px double #49627d;
+	padding: 4px;
+	transition: all 0.5s steps(3);
+	margin: 15px;
+}
+
+/* Aside - social*/
+
+.vertical-list {
+	position: fixed;
+	left: -40px;
+	bottom: 150px;
+	list-style: none;
+}
+
+.vertical-list .item-li {
+	text-align: center;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.vertical-list .item-li:hover {
+	width: 100px;
+	text-align: center;
+	transition: all .9s;
+}
+
+ul.vertical-list li:first-child {
+	border-radius: 0 15px 0 0;
+}
+
+.twitter {
+	background-color: #95ccee;
+}
+
+.in {
+	background-color: #0077b5;
+	overflow: hidden;
+	color: red;
+}
+
+.facebook {
+	background-color: #617bba;
+}
+
+.gp {
+	background-color: #dd4b39;
+}
+
+.item-li a {
+	color: #ffffff;
+	text-decoration: none;
+
+}
+
+/*media*/
+
+@media (min-width: 1020px) {
+	html {
+		font-size: 20px;
+	}
+	.main-banner {
+		height: 500px;
+
+	}
+	.item-li a:after {
+		color: #ffffff;
+		padding-left: 5px;
+		content: 'Check!';
+	}
+	.vertical-list .item-li {
+		height: 30px;
+		width: 30px;
+		padding: 0;
+	}
+}

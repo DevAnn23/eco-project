@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EcoProject</title>
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="projectTest">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, target-densitydpi=device-dpi">
+
+	<link rel="icon" type="image/png" href="img/fire.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet">
+
+	<script src="https://unpkg.com/vue"></script>
+	<script async src="script.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<h1 class="heading-header">Wyłączaj światło, włączaj oszczędzanie!</h1>
+	</header>
+	<main>
+		<section>
+			<div class="main-banner">
+				<article class="night"></article>
+				<div class="neon"></div>
+			</div>
+			<div class="light"><input type="range" name="neon" min="0" max="100" value="0.3"><span class="valueOpacity">0%</span>
+				<span class="ion-social-usd-outline"></span></div>
+		</section>
+
+		<section class="apps-vue container">
+
+			<div id="app">
+				{{ message }}
+			</div>
+
+			<div id="app-2">
+				<span v-bind:title="message">
+				Hover your mouse over me for a few seconds
+				to see my dynamically bound title!
+			  </span>
+			</div>
+
+		</section>
+
+	</main>
+
+	<aside id="app-3">
+		<ul class="vertical-list" v-if="seen">
+			<li class="facebook item-li">
+				<a href=""><span class="icon-social ion-social-facebook"></span></a>
+			</li>
+			<li class="twitter item-li">
+				<a href="https://twitter.com/"><span class="icon-social ion-social-twitter"></span></a>
+			</li>
+			<li class="gp item-li">
+				<a href=""><span class="icon-social ion-social-googleplus"></span></a>
+			</li>
+			<li class="in item-li">
+				<a href="https://www.linkedin.com/"><span class="icon-social ion-social-linkedin"></span></a>
+			</li>
+		</ul>
+	</aside>
+
+	<footer>
+		<h6>Created by<strong> Anna Banaszek</strong><span class="oi oi-lightbulb"></span></h6>
+		<p>Check out my other projects</p>
+		<a class="project" href="https://devann23.github.io/projekt_testowy//">CSS, HTML, JS</a>
+		<a class="project" href="https://devann23.github.io/python_creator//">Bootstrap</a>
+	</footer>
+
+</body>
+
+</html>
