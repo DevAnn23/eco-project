@@ -1,9 +1,20 @@
 //'use strict';
+jQuery
+$('input[type=range]').on('input', function(e){
+  var min = e.target.min,
+      max = e.target.max,
+      val = e.target.value;
+
+  $(e.target).css({
+    'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
+  });
+}).trigger('input');
+
+window.onload = function(){
 var input = document.querySelector("input"),
 	night = document.querySelector(".night"),
 	valueOpacity = document.querySelector(".valueOpacity");
-
-night.style.opacity = input.value;
+night.style.opacity = input.value / 100;
 
 function updateValue() {
 	night.style.opacity = this.value / 100;
@@ -12,6 +23,9 @@ function updateValue() {
 
 input.addEventListener('change', updateValue);
 input.addEventListener('mousemove', updateValue);
+
+};
+
 
 // VUE ***
 
@@ -25,7 +39,7 @@ var app = new Vue({
 var app2 = new Vue({
 	el: '#app-2',
 	data: {
-		message: 'You loaded this page on ' + new Date().toLocaleString()
+		message: 'You loaded this page on ' + new Date().toLocaleString(),
 
 	}
 })

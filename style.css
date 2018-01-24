@@ -102,12 +102,6 @@ footer:hover .oi {
 	overflow: hidden;
 }
 
-.vertical-list .item-li:hover {
-	width: 100px;
-	text-align: center;
-	transition: all .9s;
-}
-
 ul.vertical-list li:first-child {
 	border-radius: 0 15px 0 0;
 }
@@ -136,6 +130,59 @@ ul.vertical-list li:first-child {
 
 }
 
+
+/****input-range ****/
+
+input[type=range] {
+    outline: none;
+    padding: 0;
+    width: 20%px;
+    height: 2px;
+    background-color: #dedede;
+    background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffc107), color-stop(100%, #ff1100));
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin: 12.85px 15px;
+    vertical-align:middle;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+}
+input[type=range]::-moz-range-track {
+	  box-shadow: none;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 18px;
+  width: 28px;
+    border: 0;
+    background: #fff;
+    border: 1px solid #777;
+    border-radius: 8px;
+    box-shadow: 0 0 1px 0px rgba(0,0,0,0.1);
+    -webkit-appearance: none;
+}
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 18px;
+  width: 28px;
+    border: 0;
+    background: #fff;
+    border: 1px solid #777;
+    border-radius: 8px;
+    box-shadow: 0 0 1px 0px rgba(0,0,0,0.1);
+}
+
 /*media*/
 
 @media (min-width: 1020px) {
@@ -156,4 +203,9 @@ ul.vertical-list li:first-child {
 		width: 30px;
 		padding: 0;
 	}
+	.vertical-list .item-li:hover {
+	width: 100px;
+	text-align: center;
+	transition: all .9s;
+}
 }
