@@ -4,11 +4,11 @@
 	flex-wrap: nowrap;
 	float: left;
 }
-.dropdown-toggle:hover ~ .dropdown-menu {
+.nav-item:hover > .dropdown-menu  {
 	display: block;
 	background-color:#aaa;
+	margin: 0;
 }
-
 html {
 	font-size: 10px;
 }
@@ -19,17 +19,27 @@ html {
 }
 body {
 	transition: all .9s;
+	margin: 0;
+	padding: 0;
 }
+
 /**********List******/
 .flex-box {
 	display: block;
 }
-ul {}
+.guests-list {
+	list-style-position: inside;
+	width: 30%;
+}
 
-ol li {
+.guest-item-list {
+/*
 	list-style: none;
 	display: inline;
-	border: 2px solid #dca11a;
+*/
+	border: 1px solid #d2aaaa;
+	font-family: cursive;
+	overflow: auto;
 }
 
 /*header*/

@@ -29,21 +29,6 @@ window.onload = function () {
 
 // VUE ***
 
-var app = new Vue({
-	el: '#app',
-	data: {
-		categories: ['Frontend', 'Backend', 'Marketing', 'Po godzinach'],
-		message: ''
-	}
-})
-
-var app2 = new Vue({
-	el: '#app-2',
-	data: {
-		message: 'You loaded this page on ' + new Date().toLocaleString(),
-	}
-})
-
 var app3 = new Vue({
 	el: '#app-3',
 	data: {
@@ -51,36 +36,26 @@ var app3 = new Vue({
 
 	}
 })
-var app4 = new Vue({
-	el: '#app4',
-	data: {
-		categories: ['Frontend', 'Backend', 'Marketing', 'Po godzinach']
-	}
-})
 var app8 = new Vue({
   el: '#app8',
   data: {
     counter: 0,
-    categories: ['Frontend', 'Backend']
+    guests: ['Adam', 'Anna', 'Jan']
   },
   methods: {
     addCategory() {
-		if(!(this.category === '')){
-		this.categories.push(this.category);
+
+		if(!(this.guestName === undefined || this.guestName === "" )){
+		this.guests.push(this.guestName);
 		}
 		else{
 			alert("Pole nie może byc puste")
 		}
-      this.category = '';
+		this.guestName = '';
     }
   }
 })
-function addTask(){
-	var inputTask = document.querySelector(".inputTask"),
-		submitTask = document.querySelector(".submitTask");
-	app4.categories.push( 'New Task');
-	alert(app5.counter);
-}
+
 
 
 
@@ -90,10 +65,8 @@ var yScrollAxis = Math.floor(window.pageYOffset);
 window.onscroll = function () {
 	var yScrollAxis = Math.floor(window.pageYOffset);
 	if (yScrollAxis > 300) {
-		app.message = 'Yes';
 		app3.seen = true;
 	} else {
-		app.message = 'No';
 		app3.seen = false;
 	}
 }
