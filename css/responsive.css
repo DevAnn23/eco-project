@@ -1,0 +1,49 @@
+/*media*/
+
+@media (min-width: 768px) {
+	html {
+		font-size: 20px;
+	}
+	.main-banner {
+		height: 500px;
+
+	}
+	.menu {
+		display: block;
+	}
+	.item-list {
+		float: left;
+	}
+	.item-li a:after {
+		color: #ffffff;
+		padding-left: 5px;
+		content: 'Check!';
+	}
+	.vertical-list .item-li {
+		height: 30px;
+		width: 30px;
+		padding: 0;
+	}
+	.vertical-list .item-li:hover {
+		width: 100px;
+		text-align: center;
+		transition: all .9s;
+	}
+	.flex-box {
+		display: flex;
+	}
+	.logo-link {
+		width: 100%;
+		text-align: center;
+		color: darkseagreen;
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.logo-link {
+		width: 50%;
+		text-align: center;
+		color: red;
+	}
+}

@@ -2,216 +2,154 @@
 <html lang="en">
 
 <head>
-	<title>EcoProject</title>
+	<title>for_company</title>
 
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="projectTest">
 	<meta name="theme-color" content="#ffffff">
 	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1, target-densitydpi=device-dpi">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="icon" type="image/png" href="img/fire.png">
+	<link rel="icon" type="image/png" href="img/leaf.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
-	<link href="style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Imprima&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet">
+
 
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/vue"></script>
 	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
-	<script async src="script.js"></script>
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js dohresn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
     <![endif]-->
 </head>
-
 <body>
-		<header class="row">
-
-			<div class="col-lg-6 col-12 align-self-center">
-
-				<h1 class="align-self-center">Usługi Energetyczne<br /><span>Jan Kowalski</span>
-				</h1>
+<header id="header" class="header">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+		<a class="navbar-brand ml-5" href="#">
+			<h1 class="main-heading-header"><span class="logo-img"><img src="img/leaf.png" alt=""></span>Company for you</h1>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="ion-chevron-down"></span>
+		</button>
+		<div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+			<div class="menu navbar-nav">
+				<a id="link1" class="nav-item nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
+				<a id="link2" class="nav-item nav-link" href="#parallax_section">Features</a>
+				<a id="link3" class="nav-item nav-link" href="#portfolio">Pricing</a>
 			</div>
-
-			<div class="flex-box col-lg-6  align-self-end">
-				<div class="flex-box-row">
-					<a class="col-4" href="#">
-                   <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> <h5>Napisz</h5>
-                    <p class=>jan@kowalski.pl</p>
-                    </a>
-				</div>
-
-				<div class="flex-box-row">
-					<a class="col-3" href="#">
-                   <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> <h5> Zadzwon</h5>
-                    <p class=>kkkk@mmm.pl</p>
-                    </a>
-				</div>
-
-				<div class="flex-box-row">
-					<a class="col-4" href="#">
-                   <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> <h5> Write</h5>
-                    <p>kkkk@mmnnm.pl</p>
-                    </a>
-				</div>
-
+		</div>
+	</nav>
+	<section class="section-header">
+	<div class="section-header-bg"></div>
+		<div class="hgroup">
+			<h2 class="header-heading">Creative Digital Solutions</h2>
+			<p class="header-sub-heading">Lubię to, co robię</p>
+			<button class="main-button">View portfolio</button>
+		</div>
+		<div id="arrow"><span class="ion-chevron-down"></span></div>
+	</section>
+</header>
+<main>
+	<section class="services">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2 class="main-heading-services">Professional services</h2>
+				<p>Proin iaculis purus consequat sem cure</p>
 			</div>
-		</header>
-
-		<nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">Home <span class="sr-only">(current)</span></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav nav-fill">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          About Us
-        </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Services
-        </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Portfolio
-        </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Blog
-        </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Pages
-        </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Shop
-        </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Contact
-        </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-				</ul>
+		</div>
+		<div class="row">
+				<div class="col-lg-4 col-12">
+					<img src="img/heart.png" alt="">
+					<h4 class="serwices-heading">
+						Beautiful designs
+					</h4>
+					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div>
+				<div class="col-lg-4 col-12">
+					<img src="img/phone.png" alt="">
+					<h4 class="serwices-heading">
+						Marketing tools
+					</h4>
+					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div>
+				<div class="col-lg-4 col-12">
+					<img src="img/vawe.png" alt="">
+					<h4 class="serwices-heading">
+						Marketing tools
+					</h4>
+					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div>
 			</div>
-		</nav>
-		<main>
-
-			<section>
-				<div class="main-banner">
-
-					<article class="night">
-						<h2 class="heading-banner">Wyłączasz światło, włączasz oszczędzanie!</h2>
-					</article>
-					<div class="neon"></div>
+	</section>
+	<section class="container-fluid">
+		<div class="row-relax row">
+		<div class="sea"></div>
+			<div class="col-relax2 col-4"></div>
+			<div class="col-relax1 col-8">
+				<div class="hgroup">
+			<h2 class="header-heading">Creative Digital Solutions</h2>
+			<p class="header-sub-heading">Lubię to, co robię</p>
+			<button class="main-button">View portfolio</button>
+		</div>
+			</div>
+		</div>
+	</section>
+	<section class="latest-project">
+		<article class=" row pt-5">
+	<div class="col-12"><h4>Latest Project</h4><p>Proin iaculis purus consequat sem cure</p></div>
+			<div class="col-lg-6 col-12 text-left latest-project-text">
+				<h5>Developing</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, reprehenderit modi tenetur eaque minus maiores corrupti.</p>
+				<div class="mb-5">
+				<img src="img/icon1.png" class="rounded float-md-left pr-3" alt="...">
+				<h4>Heading</h4>
+				<p class="text-project">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui commodi in animi porro quisquam, iusto corporis, pariatur voluptatum excepturi labore neque saepe id tempora amet reiciendis, repellendus soluta deleniti.</p>
 				</div>
-				<div class="light"><input type="range" name="neon" min="0" max="100" value="50"><span class="valueOpacity">50%</span>
-					<span class="ion-social-usd-outline"></span></div>
-			</section>
-			<section class="container">
-				<br><br>
-
-				<div id="app8">
-					<h3>Zapisz się do księgi Gości</h3>
-					<ol class="guests-list">
-						<li class="guest-item-list" v-for="guestName in guests">
-							{{ guestName }}
-						</li>
-					</ol>
-
-					<input type="text" id="input" v-model="guestName">
-					<button v-on:click="addCategory">Zapisz</button>
-
+					<div>
+				<img src="img/icon1.png" class="rounded float-md-left pr-3" alt="...">
+				<h4>Heading</h4>
+				<p class="text-project">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui commodi in animi porro quisquam, iusto corporis, pariatur voluptatum excepturi labore neque saepe id tempora amet reiciendis, repellendus soluta deleniti.</p>
 				</div>
+					<div>
+				<img src="img/icon1.png" class="rounded float-md-left pr-3 mb-5" alt="...">
+				<h4>Heading</h4>
+				<p class="text-project">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui commodi in animi porro quisquam, iusto corporis, pariatur voluptatum excepturi labore neque saepe id tempora amet reiciendis, repellendus soluta deleniti.</p>
+				</div>
+<!--
+				<div class="row row-latest-project">
+				<div class="col-2 pt-3">
+					<img class="icon-par" src="img/icon1.png" alt="">
+				</div>
+					<p class="col-8 pt-3"><strong>E-commerece ready </strong><br>Lorem Ipsum</p>
+						<div class="col-2 pt-3">
+					<img class="icon-par" src="img/icon2.png" alt="">
+				</div>
+					<p class="col-10 pt-3"><strong>E-commerece ready </strong><br>Lorem Ipsum</p>
+				</div>
+-->
 
-			</section>
-
-		</main>
-		<aside id="app-3">
-			<ul class="vertical-list" v-if="seen">
-				<li class="facebook item-li">
-					<a href=""><span class="icon-social ion-social-facebook"></span></a>
-				</li>
-				<li class="twitter item-li">
-					<a href="https://twitter.com/"><span class="icon-social ion-social-twitter"></span></a>
-				</li>
-				<li class="gp item-li">
-					<a href=""><span class="icon-social ion-social-googleplus"></span></a>
-				</li>
-				<li class="in item-li">
-					<a href="https://www.linkedin.com/"><span class="icon-social ion-social-linkedin"></span></a>
-				</li>
-			</ul>
-
-		</aside>
-		<footer>
-			<h6>Created by<strong> Anna Banaszek</strong><span class="oi ion-ios-lightbulb-outline"></span></h6>
-			<p>Check out my other projects</p>
-			<a class="project" href="https://devann23.github.io/projekt_testowy//">CSS, HTML, JS</a>
-			<a class="project" href="https://devann23.github.io/python_creator//">Bootstrap</a>
-		</footer>
-
+<!--
+				<p><img class="icon-par" src="img/icon1.png" width="13%" alt=""><strong>Powerful SEO Features</strong>Lorem Ipsum</p>
+				<p><img class="icon-par" src="img/icon3.png" width="13%" alt=""><strong>Secure Encryption </strong>Lorem Ipsum</p>
+-->
+			</div>
+			<div class="div-netbook col-lg-6 col-12  p-5 text-left">
+			</div>
+		</article>
+	</section>
+</main>
 
 </body>
-
 </html>
